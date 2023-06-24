@@ -1,0 +1,165 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: hsl(207, 19%, 9%);
+    font-family: sans-serif;
+}
+
+/* Done first */
+.card {
+    color: hsl(0, 0%, 100%); 
+    background-image: url(../img/blueface.gif);
+    background-size: cover;
+    padding: 10rem 0 0;
+}
+
+/* Done second */
+.card-content {
+    padding: 3rem;      /* was 1.5em */
+    background: linear-gradient(
+            hsl(0 0% 0% / 0),
+            hsl(20 0% 0% / 0.5) 10%,
+            hsl(0 0% 0% / 1));
+    transform: translateY(75%);
+    transition: transform 500ms ease;
+    transition-delay: 200ms;
+    /* NEED THE LINE*/
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    /* left: calc(var(--padding) * -1);
+    /* left: 3rem; */
+    /* width: calc(100% + var(--padding)); */
+    width: 100%;
+    background: hsl(142 90% 61%);
+
+    transform: scaleX(1);
+
+    /* ====== Added later in video ===== */
+    /* transform: translateY(-15%); */
+
+    transition: transform 500ms ease;
+    transform-origin: left;
+}
+
+/* Done third */
+.card-title {
+    position: relative;    
+    width: max-content;
+    outline: 1px solid red;
+    /* transform: translateY(75%);   */
+}
+
+/* ======================================     card (green)    ============================================== */
+
+/*
+https://www.youtube.com/watch?v=5DEq5cWNYt8&t=2120s
+--clr-neutral-900: hsl(207, 19%, 9%).
+--clr-neutral-100: hsl(0, 0%, 100%);
+--clr-accent-400: hsl(142 90% 61%);
+*/
+
+.card1-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    /* left: 3rem; */
+    width: calc(100% + var(--padding));
+    background: hsl(142 90% 61%);
+
+    transform: scaleX(0);
+
+    /* ====== Added later in video ===== */
+    /* transform: translateY(-15%); */
+
+    transition: transform 500ms ease;
+    transform-origin: left;
+}
+
+
+/* Done fourth */
+.card-body {
+    color: rgb(255 255 255 / 0.85);
+}
+
+.card1:hover {
+    transform: scale(1.05);
+}
+
+.card1:hover .card-content {
+    transform: translateY(-15%);
+}
+
+.card1:hover .card-title::after {
+    transform: scaleX(1);
+}
+
+.container .card1 p {
+    /* transform: translateY(100px); */
+    /* opacity: 0;   */
+}
+
+.uncover:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card1 h2 {
+    position: absolute;
+    top: -28px;
+    right: 15px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.container .card h3 {
+    font-size: 1.8em;
+    color: #000;
+    font-weight: 300;
+}
+
+.container .card1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+    width: 320px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container .card1 .content {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* ============================================= end of card ========================================== */
