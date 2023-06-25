@@ -72,8 +72,8 @@
                     text-center     on mobile
                     md:text-left    medium screen to align left
                 -->
-                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">These <br> are my <br> games.</h1>
-                <div class="w-full flex justify-center md:justify-start">
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl xl:mt-24 text-center md:text-left">This is <br> David's Portfolio.</h1>
+                <div class="w-full flex xl:-mt-24 justify-center md:justify-start">
                     <!--
                         px-8 py-4      padding x-axis y-axis
                         bg-theme       color
@@ -84,7 +84,7 @@
                         items-center 
                         space-x-3      space between svg (icon/pic) and text
                     -->
-                    <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+                    <button class="px-8 py-4 bg-theme xl:my-32 text-white font-bold mt-12 flex items-center space-x-3">
                         <div>
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -112,11 +112,12 @@
             -->
 
             <!-- FIX: mobile                         w-1/3 mt-30 mr-8 md:absolute -mt-0 ml-48 md:mt-0 right-0 -z-1 -->
-            <img src="img/1.2.png" alt="" class="ml-40 w-1/3">  
+            <!--<img src="img/1.2.png" alt="man" class="ml-40 w-1/3">  -->
             <!-- FACE IMAGE TO THE RIGHT -->
-            <!--<figure class="">
-                <img src="img/pic.png" alt="man" class="align">                
-            </figure>-->
+            <figure class="">
+                <img src="img/1.2.png" alt="man" class="align">
+                <!--<figcaption class="figure-caption text-center">AI Generated Picture</figcaption>-->
+            </figure>
 
         </div>
     </div>
@@ -127,157 +128,157 @@
             mt-64               white space margin top 64
         -->
     <!-- original : <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"> -->
-    <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-        <section class="w-full"> <!-- width full -->
-            <h2 id="work" class="secondary-title">My work</h2>
-
-            <!-- Put description??-->
-            <p class="section-paragraph2"></p>
-
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mt-14 ml-20">
-
-                <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-                <div class="blog-post">
-
-                    <!-- Image class -->
-                    <div class="blog-post-img">
-                        <img src="img/moon.JPG" alt="" style="height: 98%;">
+        <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <section class="w-full"> <!-- width full -->
+                <h2 id="work" class="secondary-title">My work</h2>
+    
+                <!-- Put description??-->
+                <p class="section-paragraph2"></p>
+    
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mt-14 ml-20">
+    
+                    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+                    <div class="blog-post">
+    
+                        <!-- Image class -->
+                        <div class="blog-post-img">
+                            <img src="img/moon.JPG" alt="" style="height: 98%;">
+                        </div>
+    
+                        <div>
+                            <div class="blog-post-date">
+                                <span>03</span>
+                            </div>
+                            <div class="blog-post-title">
+                                <h3>Moon VR Game</h3>
+                            </div>
+                            <p class="blog-post-text">
+                                
+                                - Player can teleport on lunar surface, grab a flashlight that works, place a flag on a pole, fix a generator, and find easter eggs
+                                <br>- Utilized OpenXR Plugin, Ray Interactors, XR Interaction Toolkit, 
+                                Locomotion and Snap Turning to mitigate motion sickness, grabbable objects, background audio, XR 
+                                Grab Interactable, snapping objects using sockets, and interfaces with text
+    
+                                <br><br>Used: Unity, C#, Free Unity Assets
+                            </p>
+                            <a href="https://github.com/dwxv/MOON-VR-GAME" class="blog-post-cta">Code</a>
+                        </div>
                     </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>03</span>
+    
+                    <!--//////////////////////////////////////////////////////////////////////////////-->
+                    <div class="blog-post">
+    
+                        <!-- Image class -->
+                        <div class="blog-post-img">
+                            <img src="img/rusticroom.JPG" alt="" style="height: 98%;">
                         </div>
-                        <div class="blog-post-title">
-                            <h3>Moon VR Game</h3>
+    
+                        <div>
+                            <div class="blog-post-date">
+                                <span>03</span>
+                            </div>
+                            <div class="blog-post-title">
+                                <h3>Rustic Room VR</h3>
+                            </div>
+                            <p class="blog-post-text">
+                                
+                                - Made use of prefabs and scripts provided by Unity to build a room with a city background and interactable components
+                                <br>- Utilized OpenXR Plugin, XR Interaction Toolkit, Locomotion, snap turning to mitigate motion sickness, grabbable objects, activation events with audio and video, XR Grab Interactable, snapping objects using sockets, and interfaces
+                                <br>- Player can hang hats, place any hat on their head, turn on a television, listen to a fireplace with particle effects and 3D audio, teleport to different rugs, grab sports equipment, UI interface to welcome the player and restart scene
+    
+                                <br><br>Used: Unity, C#, Free Unity Assets
+                            </p>
+                            <a href="https://github.com/dwxv/MOON-VR-GAME" class="blog-post-cta">Code</a>
                         </div>
-                        <p class="blog-post-text">
-                            
-                            - Player can teleport on lunar surface, grab a flashlight that works, place a flag on a pole, fix a generator, and find easter eggs
-                            <br>- Utilized OpenXR Plugin, Ray Interactors, XR Interaction Toolkit, 
-                            Locomotion and Snap Turning to mitigate motion sickness, grabbable objects, background audio, XR 
-                            Grab Interactable, snapping objects using sockets, and interfaces with text
-
-                            <br><br>Used: Unity, C#, Free Unity Assets
-                        </p>
-                        <a href="https://github.com/dwxv/MOON-VR-GAME" class="blog-post-cta">Code</a>
+                    </div>
+                    
+                    <!--//////////////////////////////////////////////////////////////////////////////-->
+                    <div class="blog-post">
+    
+                        <!-- Image class -->
+                        <div class="blog-post-img">
+                            <img src="img/pygame.PNG" alt="" style="width: 102%; height: 98%;">
+                        </div>
+    
+                        <div>
+                            <div class="blog-post-date">
+                                <span>04</span>
+                            </div>
+                            <div class="blog-post-title">
+                                <h3>Space invaders</h3>
+                            </div>
+                            <p class="blog-post-text">
+                                - Created a Space Invaders game that keeps track of the score 
+                                <br> - Designed an interface where the player can control a ship that shoots at aliens as they approach with increasing speed
+    
+                                <br><br>Used: Python, PyGame, free image graphics
+                            </p>
+                            <a href="https://github.com/dwxv/Pygame-Space-Invaders" class="blog-post-cta">Code</a>
+                        </div>
+                    </div>
+    
+                    <!-- ///////////////////////////////////////////////////////////////////////// -->
+                    <div class="blog-post">
+    
+                        <!-- Image class -->
+                        <div class="blog-post-img">
+                            <img src="img/puzzle.gif" alt="" style="height: 100%;">
+                        </div>
+    
+                        <div>
+                            <div class="blog-post-date">
+                                <span>05</span>
+                            </div>
+                            <div class="blog-post-title">
+                                <h3>Puzzle JavaFX</h3>
+                            </div>
+                            <p class="blog-post-text">
+                                - Built a GUI design with Object Oriented Programming allows a user to play with a
+                                puzzle of hexagons to match colors
+                                <br> - This program also solves the puzzle with recursion
+    
+                                <br><br>Used: Java, JavaFX, TableView, GridPane, Recursion
+                            </p>
+                            <a href="https://github.com/dwxv/JavaFX-Puzzle-Recursion-" class="blog-post-cta">Code</a>
+                        </div>
+                    </div>
+                    
+                    <!--/////////////////////////////////////////////////////////////////////////////////-->
+    <!--
+                <div class="blog-post">
+    -->
+                        <!-- Image class -->
+    <!--
+                        <div class="blog-post-img">
+                            <img src="img/Databook.PNG" alt="">
+                        </div>
+    
+                        <div>
+                            <div class="blog-post-date">
+                                <span>08</span>
+                            </div>
+                            <div class="blog-post-title">
+                                <h3>Databook with JavaFX</h3>
+                            </div>
+                            <p class="blog-post-text">
+                                Created a small database of "People" Objects, including Student, Teacher, and
+                                Facility types. The database can be modified by adding, removing, or changing
+                                entries and is saved to a text file using IO operations
+    
+                                <br><br>Used: Java, JavaFX, FileIO
+                            </p>
+                            <a href="#" class="blog-post-cta">Code</a>
+                        </div>
                     </div>
                 </div>
-
-                <!--//////////////////////////////////////////////////////////////////////////////-->
-                <div class="blog-post">
-
-                    <!-- Image class -->
-                    <div class="blog-post-img">
-                        <img src="img/rusticroom.JPG" alt="" style="height: 98%;">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>03</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Rustic Room VR</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            
-                            - Made use of prefabs and scripts provided by Unity to build a room with a city background and interactable components
-                            <br>- Utilized OpenXR Plugin, XR Interaction Toolkit, Locomotion, snap turning to mitigate motion sickness, grabbable objects, activation events with audio and video, XR Grab Interactable, snapping objects using sockets, and interfaces
-                            <br>- Player can hang hats, place any hat on their head, turn on a television, listen to a fireplace with particle effects and 3D audio, teleport to different rugs, grab sports equipment, UI interface to welcome the player and restart scene
-
-                            <br><br>Used: Unity, C#, Free Unity Assets
-                        </p>
-                        <a href="https://github.com/dwxv/MOON-VR-GAME" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-                
-                <!--//////////////////////////////////////////////////////////////////////////////-->
-                <div class="blog-post">
-
-                    <!-- Image class -->
-                    <div class="blog-post-img">
-                        <img src="img/pygame.PNG" alt="" style="width: 102%; height: 98%;">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>04</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Space invaders</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            - Created a Space Invaders game that keeps track of the score 
-                            <br> - Designed an interface where the player can control a ship that shoots at aliens as they approach with increasing speed
-
-                            <br><br>Used: Python, PyGame, free image graphics
-                        </p>
-                        <a href="https://github.com/dwxv/Pygame-Space-Invaders" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-
-                <!-- ///////////////////////////////////////////////////////////////////////// -->
-                <div class="blog-post">
-
-                    <!-- Image class -->
-                    <div class="blog-post-img">
-                        <img src="img/puzzle.gif" alt="" style="height: 100%;">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>05</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Puzzle JavaFX</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            - Built a GUI design with Object Oriented Programming allows a user to play with a
-                            puzzle of hexagons to match colors
-                            <br> - This program also solves the puzzle with recursion
-
-                            <br><br>Used: Java, JavaFX, TableView, GridPane, Recursion
-                        </p>
-                        <a href="https://github.com/dwxv/JavaFX-Puzzle-Recursion-" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-                
+    
+    -->
                 <!--/////////////////////////////////////////////////////////////////////////////////-->
-<!--
-            <div class="blog-post">
--->
-                    <!-- Image class -->
-<!--
-                    <div class="blog-post-img">
-                        <img src="img/Databook.PNG" alt="">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>08</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Databook with JavaFX</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            Created a small database of "People" Objects, including Student, Teacher, and
-                            Facility types. The database can be modified by adding, removing, or changing
-                            entries and is saved to a text file using IO operations
-
-                            <br><br>Used: Java, JavaFX, FileIO
-                        </p>
-                        <a href="#" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-            </div>
-
--->
-            <!--/////////////////////////////////////////////////////////////////////////////////-->
-
-    </div>
-    </section>
-    </div>
+    
+        </div>
+        </section>
+        </div>
 
 
 
